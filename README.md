@@ -7,7 +7,7 @@ Check outgoing email sent with Exim, the checks are performed with the DeBounce 
 
 
 
-#$ Add email adresses to the allow list
+## Add email adresses to the allow list
 A skip file can be found here: /etc/virtual/skip_validate_recipients
 
 
