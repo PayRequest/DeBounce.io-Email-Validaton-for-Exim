@@ -13,17 +13,30 @@ The maximum number of concurrent calls (parallel connections) is 10. If you vali
 ## Installation
 
 1. Add the follow line to exim.routers.pre.conf:
+```
 no_more
-
+```
 
 2. Add the following files:
+
+```
 /etc/exim.acl_check_recipient.pre.conf
 /etc/exim.acl_script.pre.conf
 /etc/exim.custom.pl
+```
 
 3. Change API key in: 
 
+```
 /etc/exim.custom.pl:
+```
+
+4. Create Skip list
+
+
+```
+touch /etc/virtual/skip_validate_recipients
+```
 
 
 
