@@ -12,21 +12,18 @@ The maximum number of concurrent calls (parallel connections) is 10. If you vali
 
 ## Installation
 
-Modified files:
+1. Add the follow line to exim.routers.pre.conf:
+no_more
+
+
+2. Add the following files:
 /etc/exim.acl_check_recipient.pre.conf
 /etc/exim.acl_script.pre.conf
 /etc/exim.custom.pl
-/etc/exim.routers.pre.conf
 
-
-API key is saved in:
+3. Change API key in: 
 
 /etc/exim.custom.pl:
-my $url = "https://api.debounce.io/v1/?api=&email=".$recipient;
-
-/etc/exim.custom.test.pl
-my $url = "https://api.debounce.io/v1/?api=&email=".$email;
-
 
 
 
