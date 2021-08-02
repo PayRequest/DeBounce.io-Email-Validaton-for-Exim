@@ -12,6 +12,12 @@ The maximum number of concurrent calls (parallel connections) is 10. If you vali
 
 ## Installation
 
+0. Install first
+```
+yum install cpan
+cpan JSON
+```
+
 1. Add the follow line to exim.routers.pre.conf:
 ```
 no_more
